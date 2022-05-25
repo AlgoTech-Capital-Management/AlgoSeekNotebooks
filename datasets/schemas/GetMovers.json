@@ -1,0 +1,64 @@
+{
+    "errors": {
+        "400": "An error message indicating the caller must pass a correct value in the parameter.",
+        "401": "Unauthorized",
+        "403": "Forbidden",
+        "404": "An error message indicating movers for the instrument was not found."
+    },
+    "method": "GET",
+    "name": "GetMovers",
+    "query_params": {
+        "apikey": {
+            "description": "Pass your OAuth User ID to make an unauthenticated request for delayed data.",
+            "required": false,
+            "type": "string"
+        },
+        "change": {
+            "description": "To return movers with the specified change types of percent or value",
+            "required": false,
+            "type": "string"
+        },
+        "direction": {
+            "description": "To return movers with the specified directions of up or down",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "response": {
+        "top": {
+            "Mover": {
+                "change": {
+                    "format": "double",
+                    "type": "number"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "direction": {
+                    "enum": [
+                        "up",
+                        "down"
+                    ],
+                    "type": "string"
+                },
+                "last": {
+                    "format": "double",
+                    "type": "number"
+                },
+                "symbol": {
+                    "type": "string"
+                },
+                "totalVolume": {
+                    "format": "int64",
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "url": "https://api.tdameritrade.com/v1/marketdata/{index}/movers",
+    "url_params": {
+        "index": {
+            "type": "string"
+        }
+    }
+}
