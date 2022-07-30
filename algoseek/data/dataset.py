@@ -139,7 +139,7 @@ def download_basic_adj_ohlc_daily(stocks, session):
 def load_reference_data():
     """
 
-    :return: basic_ajustments, detailed_adjustments, Lookup_base, sec_master
+    :return: basic_adjustments, detailed_adjustments, Lookup_base, sec_master
     :rtype: dataframes
     """
     try:
