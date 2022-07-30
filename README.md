@@ -58,10 +58,10 @@ Equity Reference Data:
 There are currently two different ways to access the data: using the AlgoSeek SDK or using Boto3. There a notebooks 
 for both methods here, which are denoted in the file names.
 
-## 4) ML Models
+## 4) [ML Models](./ml/README.md)
 
 | Model                 | Frequency | Description                                     |
 |-----------------------|-----------|-------------------------------------------------|
 | Keras Univariate LSTM | Intraday  | [Link](ml/intraday_keras_lstm_univariate.ipynb) |
-| Linear Regression     | Intraday  | [Link] (ml/intraday_linear_regression.ipynb) |
-| LightGBM Regression | Intraday | [Link] (ml/intraday_lightgbm.ipynb) |
+| Linear Regression     | Intraday  | [Link](ml/intraday_linear_regression.ipynb) |
+| LightGBM Regression | Intraday | [Link](ml/intraday_lightgbm.ipynb) |
