@@ -68,3 +68,4 @@ for both methods here, which are denoted in the file names.
 | Keras Univariate LSTM | Intraday  | [Link](ml/intraday_keras_lstm_univariate.ipynb) |
 | Linear Regression     | Intraday  | [Link](ml/intraday_linear_regression.ipynb) |
 | LightGBM Regression | Intraday | [Link](ml/intraday_lightgbm.ipynb) |
+| XGBoost | Intraday | |
