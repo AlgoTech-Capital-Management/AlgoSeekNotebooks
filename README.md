@@ -13,11 +13,11 @@ the notebooks portion. The rest of the subdirectories are as follows
 
 | Directory | Description                                    |
 |-----------|------------------------------------------------|
-| algoseek  | Library for algoseek-specific functions        |
-| Datasets  | Samples and descriptions of AlgoSeeks Datasets |
-| ML        | Machine Learning Scripts | 
-| Notebooks | Detailed Notebooks | 
-| Strategies | Example Trading Strategies |
+| [algoseek](./algoseek/)  | Library for algoseek-specific functions        |
+| [Datasets](./datasets/)  | Samples and descriptions of AlgoSeeks Datasets |
+| [ML](./ml/)        | Machine Learning Scripts | 
+| [Notebooks](./notebooks/) | Detailed Notebooks | 
+| [Strategies](./strategies/) | Example Trading Strategies |
 | WIP | Work In Progress Notebooks | 
 
 
