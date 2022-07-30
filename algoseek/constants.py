@@ -1,0 +1,4 @@
+"""
+Constants for reference
+"""
+
