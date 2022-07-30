@@ -14,11 +14,14 @@ the notebooks portion. The rest of the subdirectories are as follows
 | Directory | Description                                    |
 |-----------|------------------------------------------------|
 | [algoseek](./algoseek/)  | Library for algoseek-specific functions        |
+| [data](./data/) | data folder (gitignored but created in first notebook |
 | [Datasets](./datasets/)  | Samples and descriptions of AlgoSeeks Datasets |
+| [eda](./eda/) | Exploratory Data Analysis and Data Visualizations | 
+| [integrations](./integrations/) | Using AlgoSeek with external data sources |
 | [ML](./ml/)        | Machine Learning Scripts | 
-| [Notebooks](./notebooks/) | Detailed Notebooks | 
-| [Strategies](./strategies/) | Example Trading Strategies |
-| WIP | Work In Progress Notebooks | 
+| [Notebooks](./notebooks/) | Miscellaneous Notebooks | 
+| [Strategies](./strategies/) | Trading Strategies |
+| [WIP](./wip/) | Work In Progress Notebooks | 
 
 
 ## 2) AlgoSeek Datasets
@@ -28,11 +31,11 @@ Equity Market Data:
 | Dataset                                | Description                                         |
 |----------------------------------------|-----------------------------------------------------|
 | BasicOHLCDaily                         | |
-| BasicAdjustedOHLCDaily                 | [Link](./eda/basic_adjusted_ohlc_daily.ipynb) |
-| PrimaryOHLCDaily                       | [Link](./eda/primary_ohlc_daily.ipynb) |
+| BasicAdjustedOHLCDaily                 | [Link](./eda/dataset_eda/basic_adjusted_ohlc_daily.ipynb) |
+| PrimaryOHLCDaily                       | [Link](./eda/dataset_eda/primary_ohlc_daily.ipynb) |
 | PrimaryAdjustedOHLCDaily               | |
 | StandardOHLCDaily                      | |
-| StandardAdjustedOHLCDaily              | [Link](./eda/standard_adjusted_ohlc_daily.ipynb) |
+| StandardAdjustedOHLCDaily              | [Link](./eda/dataset_eda/standard_adjusted_ohlc_daily.ipynb) |
 | TradeAndQuote                          | |
 | TradeAndQuoteMinuteBar                 | [Link](./2_Intraday_Data_Intro.ipynb) |
 | TradeAndQuoteMinuteBarExcludingTRF     | |
@@ -49,10 +52,10 @@ Equity Reference Data:
 
 | Dataset | Description                                                                   |
 |---------|-------------------------------------------------------------------------------|
-| BasicAdjustments |                                                                               |
-| DetailedAdjustments |                                                                               |
+| BasicAdjustments |  [Link](./eda/dataset_eda/basic_adjustments.ipynb)                                                                             |
+| DetailedAdjustments | [Link](./eda/dataset_eda/detailed_adjustments.ipynb)                                                                 |
 | LookupBase | |
-| SecMasterBase | |
+| SecMasterBase | [Link](./eda/dataset_eda/sec_master_base.ipynb) |
 
 ## 3) Data Access
 There are currently two different ways to access the data: using the AlgoSeek SDK or using Boto3. There a notebooks 
