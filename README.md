@@ -13,11 +13,11 @@ the notebooks portion. The rest of the subdirectories are as follows
 
 | Directory | Description                                    |
 |-----------|------------------------------------------------|
-| algoseek  | Library for algoseek-specific functions        |
-| Datasets  | Samples and descriptions of AlgoSeeks Datasets |
-| ML        | Machine Learning Scripts | 
-| Notebooks | Detailed Notebooks | 
-| Strategies | Example Trading Strategies |
+| [algoseek](./algoseek/)  | Library for algoseek-specific functions        |
+| [Datasets](./datasets/)  | Samples and descriptions of AlgoSeeks Datasets |
+| [ML](./ml/)        | Machine Learning Scripts | 
+| [Notebooks](./notebooks/) | Detailed Notebooks | 
+| [Strategies](./strategies/) | Example Trading Strategies |
 | WIP | Work In Progress Notebooks | 
 
 
@@ -58,10 +58,10 @@ Equity Reference Data:
 There are currently two different ways to access the data: using the AlgoSeek SDK or using Boto3. There a notebooks 
 for both methods here, which are denoted in the file names.
 
-## 4) ML Models
+## 4) [ML Models](./ml/README.md)
 
 | Model                 | Frequency | Description                                     |
 |-----------------------|-----------|-------------------------------------------------|
 | Keras Univariate LSTM | Intraday  | [Link](ml/intraday_keras_lstm_univariate.ipynb) |
-| Linear Regression     | Intraday  | [Link] (ml/intraday_linear_regression.ipynb) |
-| LightGBM Regression | Intraday | [Link] (ml/intraday_lightgbm.ipynb) |
+| Linear Regression     | Intraday  | [Link](ml/intraday_linear_regression.ipynb) |
+| LightGBM Regression | Intraday | [Link](ml/intraday_lightgbm.ipynb) |
