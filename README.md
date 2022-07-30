@@ -28,13 +28,13 @@ Equity Market Data:
 | Dataset                                | Description                                         |
 |----------------------------------------|-----------------------------------------------------|
 | BasicOHLCDaily                         | |
-| BasicAdjustedOHLCDaily                 | |
-| PrimaryOHLCDaily                       | |
+| BasicAdjustedOHLCDaily                 | [Link](./eda/basic_adjusted_ohlc_daily.ipynb) |
+| PrimaryOHLCDaily                       | [Link](./eda/primary_ohlc_daily.ipynb) |
 | PrimaryAdjustedOHLCDaily               | |
 | StandardOHLCDaily                      | |
-| StandardAdjustedOHLCDaily              | |
+| StandardAdjustedOHLCDaily              | [Link](./eda/standard_adjusted_ohlc_daily.ipynb) |
 | TradeAndQuote                          | |
-| TradeAndQuoteMinuteBar                 | |
+| TradeAndQuoteMinuteBar                 | [Link](./2_Intraday_Data_Intro.ipynb) |
 | TradeAndQuoteMinuteBarExcludingTRF     | |
 | TradeOnly                              | |
 | TradeOnlyAdjusted                      | |
