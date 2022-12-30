@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlgoSeekNotebooks.iml" filepath="$PROJECT_DIR$/.idea/AlgoSeekNotebooks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ml4t-algoseek/.idea/ml4t-algoseek.iml" filepath="$PROJECT_DIR$/../ml4t-algoseek/.idea/ml4t-algoseek.iml" />
     </modules>
   </component>
 </project>
