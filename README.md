@@ -26,52 +26,68 @@ the notebooks portion. The rest of the subdirectories are as follows
 
 ## 2) AlgoSeek Datasets
 
-Equity Market Data:
+Here are dataset-specific notebooks exploring data for daily and intraday frequencies. 
 
-| Dataset                                | Description                                         |
-|----------------------------------------|-----------------------------------------------------|
-| BasicOHLCDaily                         | |
-| BasicAdjustedOHLCDaily                 | [Link](./eda/dataset_eda/basic_adjusted_ohlc_daily.ipynb) |
-| PrimaryOHLCDaily                       | [Link](./eda/dataset_eda/primary_ohlc_daily.ipynb) |
-| PrimaryAdjustedOHLCDaily               | |
-| StandardOHLCDaily                      | |
-| StandardAdjustedOHLCDaily              | [Link](./eda/dataset_eda/standard_adjusted_ohlc_daily.ipynb) |
-| TradeAndQuote                          | |
-| TradeAndQuoteMinuteBar                 | [Link](./2_Intraday_Data_Intro.ipynb) |
-| TradeAndQuoteMinuteBarExcludingTRF     | |
-| TradeOnly                              | |
-| TradeOnlyAdjusted                      | |
-| TradeOnlyAdjustedMinuteBar             | |
-| TradeOnlyAdjustedMinuteBarBBG          | |
-| TradeOnlyAdjustedMinuteBarExcludingTRF | |
-| TradeOnlyMinuteBar | |
-| TradeOnlyMinuteBarBBG | |
-| TradeOnlyMinuteBarExcludingTRF | |
+### 2.1) Equity Market Data:
+These datasets contain the actual stock movement data.
 
-Equity Reference Data:
+| Dataset                                                                           | Description                                   |
+|-----------------------------------------------------------------------------------|-----------------------------------------------|
+| BasicOHLCDaily                                                                    | |
+| [BasicAdjustedOHLCDaily](./eda/dataset_eda/basic_adjusted_ohlc_daily.ipynb)       | |
+| [PrimaryOHLCDaily](./eda/dataset_eda/primary_ohlc_daily.ipynb)                    | |
+| [PrimaryAdjustedOHLCDaily](./eda/dataset_eda/primary_adj_ohlc_daily.ipynb)        | |
+| StandardOHLCDaily                                                                 | |
+| [StandardAdjustedOHLCDaily](./eda/dataset_eda/standard_adjusted_ohlc_daily.ipynb) | |
+| TradeAndQuote                                                                     | |
+| [TradeAndQuoteMinuteBar](./Intraday_Data_Intro.ipynb)                             | |
+| TradeAndQuoteMinuteBarExcludingTRF                                                | |
+| TradeOnly                                                                         | |
+| TradeOnlyAdjusted                                                                 | |
+| TradeOnlyAdjustedMinuteBar                                                        | |
+| TradeOnlyAdjustedMinuteBarBBG                                                     | |
+| TradeOnlyAdjustedMinuteBarExcludingTRF                                            | |
+| TradeOnlyMinuteBar                                                                | |
+| TradeOnlyMinuteBarBBG                                                             | |
+| TradeOnlyMinuteBarExcludingTRF                                                    | |
 
-| Dataset | Description                                                                   |
-|---------|-------------------------------------------------------------------------------|
-| BasicAdjustments |  [Link](./eda/dataset_eda/basic_adjustments.ipynb)                                                                             |
-| DetailedAdjustments | [Link](./eda/dataset_eda/detailed_adjustments.ipynb)                                                                 |
-| LookupBase | |
-| SecMasterBase | [Link](./eda/dataset_eda/sec_master_base.ipynb) |
+### 2.2) Equity Reference Data:
+These datasets provide more information about the securities and the Equity datasets.
+
+| [Dataset](./eda/dataset_eda/README.md)                              | Description                                                             |
+|---------------------------------------------------------------------|-------------------------------------------------------------------------|
+| [BasicAdjustments](./eda/dataset_eda/basic_adjustments.ipynb)       | |
+| [DetailedAdjustments](./eda/dataset_eda/detailed_adjustments.ipynb) |                                                        |
+| [LookupBase](./eda/dataset_eda/lookupBase.ipynb)                    | |
+| [SecMasterBase](./eda/dataset_eda/sec_master_base.ipynb)            | |
 
 ## 3) Data Access
-There are currently two different ways to access the data: using the AlgoSeek SDK or using Boto3. There a notebooks 
-for both methods here, which are denoted in the file names.
+There are currently two different ways to access the data: using the AlgoSeek SDK or using Boto3. There are notebooks 
+for both methods here, but you should start with the introductions for both.
 
-## 4) [ML Models](./ml/README.md)
+## 4) Time Series Analysis
 
-| Model                 | Frequency | Description                                     |
-|-----------------------|-----------|-------------------------------------------------|
-| Keras Univariate LSTM | Intraday  | [Link](ml/intraday_keras_lstm_univariate.ipynb) |
-| Linear Regression     | Intraday  | [Link](ml/intraday_linear_regression.ipynb) |
-| LightGBM Regression | Intraday | [Link](ml/intraday_lightgbm.ipynb) |
-| Random Forest Regressor | Intraday | [Link](ml/intraday_random_forests.ipynb) |
-| XGBoost | Intraday | |
 
-## 4.1) MLOps Framework
+## 5) Getting Started with Machine Learning
+
+### 5.1) [ML Preprocessing](./ml/preprocessing/README.md)
+
+### 5.2) [Popular Libraries](./ml/library_intro/README.md)
+Introductions to using AlgoSeek datasets with several popular libraries
+
+
+### 5.3) [ML Models](./ml/README.md)
+Some sample machine learning models to get you started 
+
+| Model                                                            | Frequency | Description         |
+|------------------------------------------------------------------|-----------|---------------------|
+| [Keras Univariate LSTM](./ml/intraday_keras_lstm_univariate.ipynb) | Intraday  | Intraday Regression |
+| [Linear Regression](./ml/intraday_linear_regression.ipynb)         | Intraday  |                     |
+| [LightGBM Regression](./ml/intraday_lightgbm.ipynb)                | Intraday |                     |
+| [Random Forest Regressor](./ml/intraday_random_forests.ipynb)      | Intraday |                     |
+| XGBoost                                                          | Intraday |                     |
+
+### 5.4) [MLOps Framework](./ml/mlflow/README.md)
 
 | Model                 | Frequency | Description                                      |
 |-----------------------|-----------|--------------------------------------------------|

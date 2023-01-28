@@ -8,30 +8,10 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 import os
 import requests
-
-def load_credentials(host_var='host_julian',user_var='user_julian',pass_var='password_julian'):
-    """
-
-    :param host_var: host variable name in env file
-    :type host_var:
-    :param user_var: user variable name in env file
-    :type user_var:
-    :param pass_var: password variable name in env file
-    :type pass_var:
-    :return: host, user, password
-    :rtype:
-    """
-
-    load_dotenv('../../.env')
-    host = os.getenv(host_var)
-    user = os.getenv(user_var)
-    password = os.getenv(pass_var)
-    return host, user, password
-
-def get_session():
-    host, user, password = load_credentials()
-    session = algoseek_connector.Session(host,user,password)
-    return session
+from pathlib import Path
+import pyarrow as pa
+import pyarrow.parquet as pq
+import pyarrow.dataset as ds
 
 # Data Download
 def download_sec_master(session):
@@ -153,4 +133,108 @@ def load_reference_data():
         print('Make sure you have downloaded all US Equity Reference Files')
 
     return basic_adj, detailed_adj, lookup, sec_master
+
+
+
+#############
+# Dataset handling classes
+#############
+
+class SecMasterBase():
+    """
+
+    """
+    def __init__(self, session=None):
+        self.session = session
+
+    def _load_dataset(self, datapath):
+        # load local file
+        pass
+
+    def download_dataset(self, save_path):
+        # download dataset
+        pass
+
+    def get_companies_by_sector(self, sector):
+        # fetch all companies in sector
+        pass
+
+    def get_companies_by_sic(self, sic):
+        # fetch all companies by Sector Identifier Code (SIC)
+        pass
+
+
+class TAQMinuteBar():
+    """
+
+    args:
+        session - AlgoSeek Connector Session
+
+    """
+
+    def __init__(self, session=None, datadir):
+        self.datadir = datadir
+        self.session = session
+        self._dataset = None
+    def _load_dataset(self,datadir):
+        """
+
+        :param datadir:
+        :return:
+        """
+        _dataset = ds.dataset(datadir+'/us_equity/taq_min',format="parquet")
+        self._dataset = _dataset
+        return _dataset
+    def download_single_ticker(self, ticker, fields=None):
+        """
+
+        :param ticker:
+        :param fields:
+        :return:
+        """
+        pass
+
+    def download_multiple_tickers(self, ticker_list, fields=None):
+        """
+
+        :param ticker_list:
+        :param fields:
+        :return:
+        """
+        pass
+    def list_instruments(self):
+        """
+        """
+        pass
+    def get_fields(self):
+        """
+
+        :return:
+        """
+        pass
+
+class DailyMarketData():
+    """
+    Class for all daily frequency pricing datasets from AlgoSeek. These are:
+        PrimaryExchangeDailyOHLC
+        StandardDailyOHLC
+        StandardAdjustedDailyOHLC
+        BloombergAdjustedDailyOHLC
+
+    """
+
+    def __init__(self, session=None, dataset=None):
+        self.session = session
+        self.dataset = dataset
+
+
+
+class ParquetDataHandler():
+    """
+
+    """
+
+    def __init__(self, datadir: Path) -> None:
+        self._datadir = datadir
+
 
